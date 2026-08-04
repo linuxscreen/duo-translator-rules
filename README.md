@@ -1,0 +1,1 @@
+This repository serves as the remote source for the system rules in Duo translator's website translation rules.
