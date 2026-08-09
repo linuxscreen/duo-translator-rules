@@ -96,7 +96,8 @@
                 "#description-inline-expander #expanded", // video description
                 "a#video-title",
                 "#description-text",
-                ".shortsLockupViewModelHostOutsideMetadataTitle"
+                ".shortsLockupViewModelHostOutsideMetadataTitle",
+                "#title" // video title
             ],
             "injectCss": ".ytLockupMetadataViewModelTitle, .shortsLockupViewModelHostOutsideMetadataTitle, #description-text { -webkit-line-clamp: unset !important; max-height: none !important; }"
         },
