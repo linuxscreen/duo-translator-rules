@@ -5,7 +5,7 @@
 {
   "schemaVersion": 1,
   "name": "Duo Translator Built-in Rules",
-  "updatedAt": "2026-08-11T00:00:00Z",
+  "updatedAt": "2026-08-13T00:00:00Z",
   "rules": [
     {
       "id": "github-general",
@@ -108,11 +108,13 @@
       "includeUrls": "*wikipedia.org/wiki/*",
       "includeSelectors": [
         ".mw-content-ltr",
-        "#mw-panel-toc-list"
+        "#mw-panel-toc-list",
+        ".mwe-popups"
       ],
       "excludeSelectors": [
         "[aria-labelledby~=\"External_links\"]"
-      ]
+      ],
+      "injectCss": ".mwe-popups-extract {max-height:unset!important;height:unset!important;}"
     },
     {
       "id": "youtube",
