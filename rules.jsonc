@@ -5,7 +5,7 @@
 {
   "schemaVersion": 1,
   "name": "Duo Translator Built-in Rules",
-  "updatedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-09-10T00:00:00Z",
   "rules": [
     {
       "id": "github-general",
@@ -134,9 +134,10 @@
         "a#video-title",
         "#description-text",
         ".shortsLockupViewModelHostOutsideMetadataTitle",
-        "#title" // video title
+        "#title", // video title
+        ".ytShortsVideoTitleViewModelShortsVideoTitle"
       ],
-      "injectCss": ".ytLockupMetadataViewModelTitle, .shortsLockupViewModelHostOutsideMetadataTitle, #description-text { -webkit-line-clamp: unset !important; max-height: none !important; }"
+      "injectCss": ".ytLockupMetadataViewModelTitle, .shortsLockupViewModelHostOutsideMetadataTitle, #description-text, .ytShortsVideoTitleViewModelShortsVideoTitle { -webkit-line-clamp: unset !important; max-height: none !important; }"
     },
     {
       "id": "google-account",
