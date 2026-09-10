@@ -5,7 +5,7 @@
 {
   "schemaVersion": 1,
   "name": "Duo Translator Built-in Rules",
-  "updatedAt": "2026-08-13T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z",
   "rules": [
     {
       "id": "github-general",
@@ -31,19 +31,24 @@
     {
       "id": "github-issues",
       "name": "Github Issues",
-      "includeUrls": "github.com/*/*/issues",
+      "includeUrls": ["github.com/*/*/issues", "github.com/*/*/issues/*"],
       "includeSelectors": [
         ".IssuePullRequestTitle-module__ListItemTitle_0__CBNvC .prc-Text-Text-9mHv3", // title
-        ".tmp-p-4" // "If you have a bug or an idea, read the contributing guidelines before opening an issue." below the "All issues"
+        ".tmp-p-4", // "If you have a bug or an idea, read the contributing guidelines before opening an issue." below the "All issues"
+        ".prc-PageHeader-TitleArea-2n2J0", // specific issue title
+        ".markdown-body .NewMarkdownViewer-module__safe-html-box__ZT1eD", // specific issue comments
+        "#issue-viewer-subscription-description" // "You're not receiving notifications from this thread."
       ]
     },
     {
       "id": "github-pulls",
       "name": "Github Pulls",
-      "includeUrls": "github.com/*/*/pulls",
+      "includeUrls": ["github.com/*/*/pulls", "github.com/*/*/pull/*"],
       "includeSelectors": [
         ".js-issue-row .h4", // title
-        ".js-notice p,h4" // "First time contributing" message
+        ".js-notice p,h4", // "First time contributing" message
+        ".js-comment-body",
+        ".CommitRow-module__ListItemTitle_0__cUhJS"
       ]
     },
     {
